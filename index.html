@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Great Letter 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  
+  <main class="scene">
+    <!-- Intro -->
+    <section class="screen intro-screen" id="introScreen">
+      <p class="intro-eyebrow">Someone has a secret to tell you…</p>
+      <h1 class="intro-title">A Letter for You</h1>
+      <p class="intro-sub">Tap the envelope to open your heart</p>
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the love letter">
+        <div class="envelope-back"></div>
+        <div class="letter-preview" id="letterPreview">
+          <span class="preview-seal">💗</span>
+        </div>
+        <div class="envelope-front" id="envelopeFront"></div>
+        <div class="envelope-flap" id="envelopeFlap"></div>
+        <div class="envelope-shadow"></div>
+      </div>
+      <p class="hint">click or tap ✨</p>
+    </section>
+    
+    <!-- Letter -->
+    <section class="screen letter-screen hidden" id="letterScreen">
+      <article class="letter-paper" id="letterPaper">
+        <button class="close-btn" id="closeLetter" aria-label="Close letter">×</button>
+        <div class="letter-inner">
+          <p class="letter-date">For the one who makes my days brighter</p>
+          <h2 class="letter-greeting">Hi Hafsa Bhaji,</h2>
+          <div class="letter-body">
+            <p>I've been trying to find the right words, but every time I see you, they all disappear. So I wrote them down instead — hoping my heart can speak where my voice cannot.</p>
+            <p>There is something about the way you smile that turns an ordinary moment into my favorite memory. You don't just light up a room; you light up something in me.</p>
+            <p>I like you. Not just a little, and not just for now. I like the way you laugh, the way you care, and the way my whole world feels softer when you're in it.</p>
+            <p class="letter-question">So… I have to ask you something.</p>
+          </div>
+          <p class="letter-signature">Forever yours brother ,<br /><span class="signature-name">Your Brother  💘</span></p>
+        </div>
+      </article>
+      
+      <div class="question-card hidden" id="questionCard">
+        <h2 class="question-title">Is u love this letter ?</h2>
+        <p class="question-sub">Choose from your heart ❤️</p>
+        <div class="question-buttons">
+          <button class="btn btn-yes" id="yesBtn">Yes 💖</button>
+          <button class="btn btn-no" id="noBtn">No 💔</button>
+        </div>
+        <p class="plea" id="pleaText"></p>
+      </div>
+    </section>
+    
+    <!-- Celebration -->
+    <section class="screen celebration-screen hidden" id="celebrationScreen">
+      <div class="celebration-card">
+        <div class="big-heart">💖</div>
+        <h2 class="celebration-title">You Just Made Me<br />the Happiest Person Alive!</h2>
+        <p class="celebration-text">This is only the beginning of something beautiful. I promise to make you smile, to listen, to show up, and to choose you — every single day thanks u sister.</p>
+        <p class="celebration-sign">— Yours, now and always mine sister.</p>
+        <button class="btn btn-restart" id="restartBtn">Read the letter again 💌</button>
+      </div>
+      <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p>Made with 💗 just for you</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
